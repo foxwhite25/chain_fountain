@@ -1,0 +1,18 @@
+{
+    "beadMass": 5,
+    "linkLength": 0.01,
+    "initialHeight": 1,
+    "timeStepSize": 0.001,
+    "subSteps": 10,
+    "linkStiffness": 10000000,
+    "gravity": 9.8,
+    "beakerWidth": 0.08,
+    "beakerHeight": 0.02,
+    "beakerThickness": 0.05,
+    "beakerStiffness": 10000000,
+    "totalBeads": 300,
+    "XOffset": 400,
+    "YOffset": 50,
+    "zoom": 600,
+    "playSpeed": 2
+}
