@@ -59,7 +59,9 @@ Biggins & Warner 对他们的数字实验的描述对下面描述的方法的设
 选择一个恒定的积分时间步长为 *&Delta;t* 并在时间 *t<sub>i</sub>=&Delta;t&times;i* 时计算位置。
 韦尔莱积分法的计算成本非常小，因此 *&Delta;t* 可以选择得非常小，即使是 *&approx;10&micro;s* 也可以轻易运行。
 对于初始积分步骤，我们假设没有初始速度计算 *x&#818;<sub>1</sub>=x&#818;<sub>0</sub>+A(x&#818;<sub>0</sub>)&Delta;t<sup>2</sup>/2* 。
-然后对于下面的积分步骤，我们通过计算 *x&#818;<sub>i+1</sub>=2x&#818;<sub>i</sub>-x&#818;<sub>i-1</sub>+A(x&#818;<sub>i</sub>)&Delta;t<sup>2</sup>* 来考虑最后两个时间。
+然后对于下面的积分步骤，我们计算 *x&#818;<sub>i+1</sub>=2x&#818;<sub>i</sub>-x&#818;<sub>i-1</sub>+A(x&#818;<sub>i</sub>)&Delta;t<sup>2</sup>* 并带入上两次的计算。
+函数 *A(x&#818;<sub>i</sub>)* 是第 *i* 个点质量的加速度，这样 *A(x&#818;<sub>i</sub>) = [F<sub>i</sub><sup>(L)</sup>(x&#818;<sub>i</sub>)+F<sub>i</sub><sup>(G)</sup>(x&#818;<sub>i</sub>)+F<sub>i</sub><sup>(B)</sup>(x&#818;<sub>i</sub>)]/m* 。
+
  
 运行后将生成一个 `config.json` 文件，解释以及默认值如下：
 
